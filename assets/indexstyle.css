@@ -1,0 +1,119 @@
+body,
+    html {
+        position: relative;
+        height: 100%;
+        /* overflow: hidden; */
+    }
+
+    body {
+        background: #eee;
+        font-family: 'Poppins';
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        /* width: 100%; */
+        /* height: 100%; */
+        object-fit: cover;
+    }
+
+    /* Swiper Pagination Styles */
+    .swiper-pagination-bullet {
+        background-color: #fff;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #4070f4;
+    }
+
+    .bg-slate-300 {
+        background-color: #B0DAFF;
+    }
+
+    .bg-slate-600 {
+        background-color: #3A98B9;
+    }
+
+    .bg-slate-900 {
+        background-color: #2B3467;
+    }
+
+    .bg-gradient-blue {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(174deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    }
+
+    .bg-gradient-mauve {
+        background: rgb(62, 0, 134);
+        background: linear-gradient(174deg, rgba(62, 0, 134, 1) 0%, rgba(92, 2, 124, 1) 29%, rgba(184, 73, 255, 1) 100%);
+    }
+
+    .bg-gradient-sexy-blue {
+        background: rgb(0, 121, 164);
+        background: linear-gradient(174deg, rgba(61, 239, 255, 1) 0%, rgba(0, 149, 179, 1) 29%, rgba(0, 121, 164, 1) 100%);
+    }
+
+    .bg-gradient-pinky {
+        background: rgb(247, 25, 110);
+        background: linear-gradient(174deg, rgba(247, 25, 110, 1) 0%, rgba(247, 54, 79, 1) 29%, rgba(255, 177, 46, 1) 100%);
+    }
+
+    .bg-gradient-love-tonight {
+        background: rgb(71, 104, 219);
+        background: linear-gradient(174deg, rgba(71, 104, 219, 1) 0%, rgba(127, 105, 198, 1) 29%, rgba(174, 106, 180, 1) 100%);
+    }
+
+    @media (min-width:320px) {
+        /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    }
+
+    @media (min-width:480px) {
+        /* smartphones, Android phones, landscape iPhone */
+    }
+
+    @media (min-width:600px) {
+        /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    }
+
+    @media (min-width:801px) {
+
+        /* tablet, landscape iPad, lo-res laptops ands desktops */
+        .img-slide {
+            height: 500px;
+        }
+    }
+
+    @media (min-width:1025px) {
+
+        /* big landscape tablets, laptops, and desktops */
+        .img-slide {
+            height: 500px;
+        }
+    }
+
+    @media (min-width:1281px) {
+
+        /* hi-res laptops and desktops */
+        .img-slide {
+            height: 500px;
+        }
+    }

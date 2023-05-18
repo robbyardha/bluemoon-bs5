@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <title>Home</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.css">
     <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css">
@@ -60,7 +60,7 @@
                                 src="assets/img/storyset_ill/Launching-bro.png" alt="" srcset="">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <a href="login.html" class="btn btn-md btn-primary mt-4 ">Getting Started</a>
+                            <a href="home.html" class="btn btn-md btn-primary mt-4 ">Getting Started</a>
                         </div>
 
                     </div>
@@ -71,11 +71,11 @@
             <div class="swiper-pagination"></div>
 
             <!-- If we need navigation buttons -->
-            <!-- <div class="swiper-button-prev"></div> -->
-            <!-- <div class="swiper-button-next"></div> -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
             <!-- If we need scrollbar -->
-            <!-- <div class="swiper-scrollbar"></div> -->
+            <div class="swiper-scrollbar"></div>
         </div>
 
     </div>
@@ -84,23 +84,24 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="assets/bootstrap5/js/bootstrap.js"></script>
     <script src="assets/bootstrap5/js/bootstrap.bundle.js"></script>
+    <script src="assets/script.js"></script>
 
     <script>
         // var swiper = new Swiper(".mySwiper", {     pagination: {         el:
         // ".swiper-pagination"     } });
         // core version + navigation, pagination modules:
-        // import Swiper, {
-        //     Navigation,
-        //     Pagination
-        // } from 'swiper';
+        import Swiper, {
+            Navigation,
+            Pagination
+        } from 'swiper';
 
         // configure Swiper to use modules
-        // Swiper.use([Navigation, Pagination]);
+        Swiper.use([Navigation, Pagination]);
 
         const swiper = new Swiper('.mySwiper', {
 
             slidesPerView: 1,
-            // effect: "cards",
+            effect: "cards",
             grabCursor: true,
             // Optional parameters direction: 'vertical', loop: true, If we need pagination
 
