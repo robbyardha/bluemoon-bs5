@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap-icons.css">
+        <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+
+    <style>
+        body,
+        html {
+            position: relative;
+            height: 100%;
+            /* overflow: hidden; */
+        }
+
+        body {
+            background: #eee;
+            font-family: 'Poppins';
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            /* width: 100%; */
+            /* height: 100%; */
+            object-fit: cover;
+        }
+
+        /* Swiper Pagination Styles */
+        .swiper-pagination-bullet {
+            background-color: #6e93f7;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #4070f4;
+        }
+
+        .bg-slate-300 {
+            background-color: #B0DAFF;
+        }
+        .bg-slate-600 {
+            background-color: #3A98B9;
+        }
+        .bg-slate-900 {
+            background-color: #2B3467;
+        }
+
+        .bg-gradient-blue {
+            background: rgb(2,0,36);
+            background: linear-gradient(174deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        }
+
+        .bg-gradient-mauve {
+            background: rgb(62,0,134);
+            background: linear-gradient(174deg, rgba(62,0,134,1) 0%, rgba(92,2,124,1) 29%, rgba(184,73,255,1) 100%);
+        }
+        .bg-gradient-sexy-blue {
+            background: rgb(0,121,164);
+            background: linear-gradient(174deg, rgba(61,239,255,1) 0%, rgba(0,149,179,1) 29%, rgba(0,121,164,1) 100%);
+        }
+        .bg-gradient-pinky {
+            background: rgb(247,25,110);
+            background: linear-gradient(174deg, rgba(247,25,110,1) 0%, rgba(247,54,79,1) 29%, rgba(255,177,46,1) 100%);
+        }
+        .bg-gradient-love-tonight {
+            background: rgb(71,104,219);
+            background: linear-gradient(174deg, rgba(71,104,219,1) 0%, rgba(127,105,198,1) 29%, rgba(174,106,180,1) 100%);
+        }
+
+        @media (min-width:320px) {
+            /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+        }
+        @media (min-width:480px) {
+            /* smartphones, Android phones, landscape iPhone */
+        }
+        @media (min-width:600px) {
+            /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+        }
+        @media (min-width:801px) {
+            /* tablet, landscape iPad, lo-res laptops ands desktops */
+            .img-slide {
+                height: 500px;
+            }
+        }
+        @media (min-width:1025px) {
+            /* big landscape tablets, laptops, and desktops */
+            .img-slide {
+                height: 500px;
+            }
+        }
+        @media (min-width:1281px) {
+            /* hi-res laptops and desktops */
+            .img-slide {
+                height: 500px;
+            }
+        }
+    </style>
+    <body>
+        <div class="h-100 w-100">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg-gradient-blue text-white">
+                        <div class="row">
+                            <img
+                                class="mx-auto d-block img-fluid img-slide"
+                                src="assets/img/storyset_ill/metaverse.png"
+                                alt=""
+                                srcset="">
+                            <h3>Welcome To Bluemoon</h3>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-gradient-mauve text-white">
+                        <div class="row">
+                            <img
+                                class="mx-auto d-block img-fluid img-slide"
+                                src="assets/img/storyset_ill/backtoschool.png"
+                                alt=""
+                                srcset="">
+                            <h5>Bluemoon Merupakan Platform Monitoring Activity Untuk Melatih Intelegensi
+                                Peserta Didik</h5>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-gradient-sexy-blue text-white">
+                        <div class="row">
+                            <img
+                                class="mx-auto d-block img-fluid img-slide"
+                                src="assets/img/storyset_ill/kids.png"
+                                alt=""
+                                srcset="">
+                            <h5>Bluemoon Melatih Konsentrasi Peserta didik dengan metode yang interaktif</h5>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-gradient-pinky text-white">
+                        <div class="row">
+                            <img
+                                class="mx-auto d-block img-fluid img-slide"
+                                src="assets/img/storyset_ill/gift.png"
+                                alt=""
+                                srcset="">
+                            <h5>Ikuti Tugasnya dan dapatkan hadiah menarik</h5>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide bg-gradient-love-tonight text-white">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                                <h4>Let's Join with us</h4>
+                                <img
+                                    class="mx-auto d-block img-fluid img-slide"
+                                    src="assets/img/storyset_ill/Launching-bro.png"
+                                    alt=""
+                                    srcset="">
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <a href="home.html" class="btn btn-md btn-primary mt-4 ">Getting Started</a>
+                            </div>
+
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <script src="assets/swiper/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="assets/bootstrap5/js/bootstrap.js"></script>
+        <script src="assets/bootstrap5/js/bootstrap.bundle.js"></script>
+        <script src="assets/script.js"></script>
+
+        <script>
+            // var swiper = new Swiper(".mySwiper", {     pagination: {         el:
+            // ".swiper-pagination"     } });
+            const swiper = new Swiper('.mySwiper', {
+
+                slidesPerView: 1,
+                effect: "cards",
+                grabCursor: true,
+                // Optional parameters direction: 'vertical', loop: true, If we need pagination
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    dynamicBullets: true,
+                    clickable: true
+                },
+
+                // Navigation arrows navigation: {     nextEl: '.swiper-button-next', prevEl:
+                // '.swiper-button-prev' }, And if we need scrollbar scrollbar: { el:
+                // '.swiper-scrollbar' }
+            });
+        </script>
+    </body>
+
+</html>
