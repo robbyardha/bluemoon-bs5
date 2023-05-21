@@ -257,7 +257,11 @@
             
     
             $('.datatables').DataTable({
-                responsive: true
+                responsive: true,
+                "lengthMenu": [
+                [50, 10, 25, -1],
+                [50, 10, 25, "All"]
+            ]
             });
         })
     </script>

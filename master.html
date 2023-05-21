@@ -17,6 +17,9 @@
     
     <!-- FLATPICKR -->
     <link rel="stylesheet" href="assets/flatpickr/flatpickr.min.css" />
+    
+    <!-- CKEDITOR -->
+    <link rel="stylesheet" href="assets/ckeditor/ckeditor.js" />
 
 
     <link rel="stylesheet" href="assets/style.css">
@@ -136,7 +139,7 @@
                 </div>
 
                 <div class="card-body">
-                    <form action="" method="post">
+                    <form action="" method="post" enctype="multipart/form-data">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="exampleFormControlInput1"
@@ -168,6 +171,24 @@
                             <label for="exampleFormControlTextarea1" class="form-label">Waktu</label>
                             <input type="text" class="form-control clockpickr" name="clock" id="clock">
                         </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Year</label>
+                            <input type="text" class="form-control yearpicker" name="year" id="year">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Range</label>
+                            <input type="text" class="form-control rangepicker" name="rahge" id="rahge">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Upload</label>
+                            <input type="file" class="dropify">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">CKEDITOR</label>
+                            <textarea class="form-control" id="editor" rows="3"></textarea>
+                        </div>
 
                         <button type="submit" class="btn btn-sm btn-primary float-end">Submit</button>
                     </form>
@@ -194,6 +215,24 @@
     <!-- flatpickr -->
     <script src="assets/flatpickr/flatpickr.min.js"></script>
 
+    <!-- CKEDITOR -->
+    <script src="assets/ckeditor/ckeditor.js"></script>
+
+
+    <script>
+
+        // YOU CAN USE TO UPLOAD IMAGE IN CKEDITOR
+    
+        // CKEDITOR.replace('editor', {
+        //     height: 300,
+        //     // CKEDITOR.replace('.ckeditor', {
+        //     filebrowserUploadUrl: '<?= base_url('berita/ck_editor_uploadimg') ?>',
+        //     filebrowserUploadMethod: 'form'
+        // });
+    
+    
+        CKEDITOR.replace('editor');
+    </script>
 
     <script>
         $(document).ready(function () {
@@ -201,6 +240,10 @@
             $('.select2').select2();
             $('.select2-modal').select2({
                 dropdownParent: $(".modal-select2")
+            });
+            $('.select2-multiple').select2();
+            $('.select2-multiple-disabled').select2({
+                disabled: true
             });
 
             $('.dropify').dropify({
@@ -221,10 +264,20 @@
                 enableTime: true,
                 noCalendar: true,
                 dateFormat: "H:i K"
-
             });
+
+            $(".yearpicker").flatpickr({
+                dateFormat: "Y"
+            })
+
+            $(".rangepicker").flatpickr({
+                dateFormat: "Y-m-d",
+                mode: "range"
+            })
         })
     </script>
+
+
 
     
 </body>
